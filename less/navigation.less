@@ -1,1 +1,40 @@
 // Navigation Styles here
+.top{
+	border-bottom: 2px dashed @navigation-border;
+	.top-nav {
+		max-width: 800px;
+		display: flex;
+		justify-content: space-between;
+		margin: 30px auto;
+		width: 100%;
+		@media @mobile{
+			.column();
+			margin: 0 20px;
+			width: auto;
+		}
+		div h1{
+			@media @mobile{
+				margin: 20px auto;
+			}
+		}
+		.nav-bar{
+			@media @mobile{
+				width: 100%;
+				display: flex;
+				justify-content: space-around;
+				margin: 10px auto;
+			}
+			button{
+				border: none;
+				padding: 4px 8px;
+				font-size: 1.5rem;
+				@media @mobile{
+					font-size: 1.7rem;
+				}
+				&:hover{
+					color: grey;
+				}
+			}
+		}
+	}
+}
